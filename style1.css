@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #eee;
+	font-family: 'Muli', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+  text-align: center;
+}
+.bg-image {
+  background: url('https://i.ibb.co/G37Y9Wf/8a746d8eb265ab3ef533fa491e93f8b4.jpg') no-repeat center/cover;
+  filter: contrast(80%);
+  height: 100vh;
+  width: 100%;
+}
+h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.15);
+  padding: 2rem 3rem;
+}
+.fa-tint {
+	color: rgb(160, 160, 160);
+	position: absolute;
+	top: -20px;
+  animation: fall linear forwards;
+}
+@keyframes fall {
+	to {
+		transform: translateY(105vh);
+	}
+}

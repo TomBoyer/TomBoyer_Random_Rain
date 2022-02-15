@@ -1,0 +1,49 @@
+@keyframes fall {
+    to{
+        transform: translateY(105vh);
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #eee;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.bg-image{
+    background: url(./media/basic-pics/rainbow-1467988_1920.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+
+    filter: /* blur(3px) */ contrast(80%);
+
+    h1 {
+        text-transform: uppercase;
+
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background: rgba(0, 0, 0, 0.15);
+        border: solid 1px white;
+        padding: 2rem 3rem;
+    }
+
+    
+}
+.fa-tint {
+    color: rgb(160, 160, 160);
+    /* color: red; */
+    position: absolute;
+    top: -20px;
+    animation: fall linear forwards;
+}
